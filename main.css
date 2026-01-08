@@ -1,0 +1,152 @@
+/* The closest fonts i could find to the mock up*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+
+
+body {
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  background: white;
+  color: #111;
+}
+
+
+body div {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  margin: 20px 0;
+}
+
+/* h1 link */
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+
+nav {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #888;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+
+main {
+  margin-top: 30px;
+}
+
+/* article layout (desktop) */
+article {
+  display: flex;
+  gap: 30px;
+}
+
+/* date column */
+.post-date {
+  width: 180px;
+  text-align: right;
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* content column */
+.post-content {
+  border-left: 1px solid #ddd;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.post-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  margin: 0 0 15px;
+  color: #888;
+}
+
+.post-content h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* images */
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  max-width: 280px;
+  width: 100%;
+}
+
+/* body copy text */
+.post-content p {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.post-content p a {
+  color: #888;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Mobile version */
+@media (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  article {
+    flex-direction: column;
+  }
+
+  .post-date {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  .post-content {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+}
